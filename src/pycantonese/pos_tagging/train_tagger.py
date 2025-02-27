@@ -4,7 +4,9 @@ import logging
 
 from pycantonese import hkcancor
 from pycantonese.pos_tagging import POSTagger
-from pycantonese.pos_tagging.tagger import _JSON_PATH
+# from pycantonese.pos_tagging.tagger import _JSON_PATH
+import pycantonese.pos_tagging.tagger as Tagger
+_JSON_PATH = Tagger._JSON_PATH
 
 
 _TAGGER_PARAMETERS = {

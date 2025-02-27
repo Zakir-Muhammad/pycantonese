@@ -144,7 +144,7 @@ class POSTagger:
         tags = []
         if not words:
             return tags
-        context = self.START + words + self.END
+        context = self.START + words + self.END # Prefix and suffix the words by START and END keywords for context
         for i, word in enumerate(words):
             tag = self.tagdict.get(word)
             if not tag:
